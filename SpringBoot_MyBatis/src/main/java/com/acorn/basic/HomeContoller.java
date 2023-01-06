@@ -72,6 +72,18 @@ public class HomeContoller {
 		
 		return "upload";
 	}
+	//SmartEditor 출력하기 위한 요청
+	@GetMapping("/editor")
+	public String editor() {
+		return "insertform";
+	}
+	//SmartEditor 에서 입력한 내용 추출 및 보기
+	@PostMapping("/insert")
+	public String insert(HttpServletRequest request, String title,String content) {
+		request.setAttribute("title", title);
+		request.setAttribute("content", content);
+		return "insert";
+	}
 }
 
 

@@ -27,6 +27,10 @@
 			첨부파일 <input type="file" name="file"/>
 			<button>업로드</button>
 		</form>
+		
+		<ul>
+			<li><a href="${pageContext.request.contextPath}/editor">SmartEditor 테스트</a></li>
+		</ul>
 	</div>
 </body>
 </html>
